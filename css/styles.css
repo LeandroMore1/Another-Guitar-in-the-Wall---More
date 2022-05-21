@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Alameda Script";
+    src: url("../fonts/AlamedaScript.otf");
+}
+
+body {
+    background-image: url("../img/fethi-bouhaouchine-j2s9HybIWq0-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "intro intro intro"
+        "musicos musicos musicos"
+        "museo museo museo"
+        "visita visita visita"
+        "footer footer footer";
+    grid-template-columns: 12% auto 12%;
+    font-family: "Bebas Neue";
+    color: white;
+    width: fit-content
+}
+
+.main p {
+    font-size: 18px;
+}
+
+.main h2 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.tituloPrincipal {
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alameda Script";
+    font-size: 4em;
+    text-shadow: 7px 7px 2px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.headerMain {
+    color: white;
+    background-image: url("../img/banner7.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: ridge;
+    border-color: #8e96a5;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: rgba(2, 2, 2, 0.6);
+    border-bottom: solid 1px white;
+}
+
+.enlaces a {
+    padding: 0px 12px 0px 12px;
+    color: white;
+    font-size: 16px;
+    font-family: "Bebas Neue";
+}
+
+.introduccion {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    row-gap: 20px;
+}
+
+.musicos {
+    grid-area: musicos;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 40px;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.musicos img {
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.conoceElMuseo {
+    grid-area: museo;
+    grid-template-rows: 1fr 2fr 1fr;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-column: 2;
+    padding: 50px;
+}
+
+
+.veniAVernos {
+    grid-area: visita;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    padding-bottom: 30px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    border-top: ridge;
+    font-family: "Bebas Neue";
+    color: white;
+    background-color: #1c1c1c;
+    font-size: 15px;
+}
+
+.mainColeccion {
+
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.mainColeccion p {
+    padding: 30px
+}
+
+.instrumento {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.instrumento {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bajo {
+    flex-direction: column-reverse;
+}
+
+.mainColeccion p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.mainColeccion h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.mainColeccion img {
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+}
+
+.linkDeFondo {
+    padding: 40px;
+}
+
+.linkDeFondo a {
+    color: white;
+    border-style: solid;
+    border-spacing: 20px 20px;
+    border-color: #ffffff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.introduccion {
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.introduccion p {
+    font-size: 20px
+}
+
+.introduccion h2 {
+    font-size: 2.5em;
+}
+
+.mainNosotros {
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.seccionNos1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    text-align: center;
+    grid-template-columns: 2;
+    column-gap: 20px;
+    font-size: 14px;
+}
+
+.seccionNos2 {
+    text-align: center;
+}
+
+
+.imagenesNosotros {
+    display: grid;
+    grid-template-rows: 2;
+    row-gap: 20px;
+}
+
+.imagenesNosotros img {
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    width: 100px;
+    height: 100px;
+}
+
+.articMonkeys {
+    padding-bottom: 20px;
+}
+
+.intNosotros p {
+    font-size: 15px;
+}
+
+.intNosotros img {
+    width: 200px;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.footerNosotros {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.mainVisitas {
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.formulario img {
+    width: 200px;
+    height: 150px;
+    padding-left: 10px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafoVisitas {
+    text-align: center;
+    padding: 20px;
+}
+
+.parrafoVisitas p {
+    padding: 10px;
+}
+
+.Contacto {
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.formularioContacto label {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContacto {
+    display: grid;
+    grid-template-rows: 25% auto;
+    margin: 20px;
+    text-align: center;
+    height: 400px;
+}
+
+.formularioContacto textarea {
+    width: 250px;
+    height: 50px
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .musicos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .musicos img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .musicos p {
+        font-size: 20px;
+    }
+
+    .main p {
+        font-size: 23px;
+    }
+
+    .instrumento {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    .instrumento {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+
+
+    .bajoFlea p {
+        text-align: left;
+    }
+
+    .linkDeFondo a {
+        font-size: 30px;
+    }
+
+    .seccionNos1 {
+        justify-content: space-around;
+    }
+
+    .seccionNos1 img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .seccionNos2 img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .footerNosotros {
+        font-size: 15px;
+    }
+
+
+    footer {
+        font-size: 1.3em;
+    }
+
+    .introduccion img {
+        width: 400px
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("../img/banner7.jpg");
+    }
+
+    .tituloPrincipal {
+        font-size: 6.3em;
+        height: 300px;
+
+    }
+
+    .main p {
+        font-size: 20px;
+    }
+
+    .main h2 {
+        font-size: 40px;
+
+    }
+
+
+    .enlaces a {
+        padding: 0px 17px 0px 17px;
+        font-size: 20px;
+
+    }
+
+    .musicos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .musicos p {
+        width: 200px;
+        font-size: 17px;
+
+    }
+
+
+    .musicos img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .conoceElMuseo iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .veniAVernos iframe {
+        width: 400px;
+        height: 300px;
+        padding-bottom: 70px;
+    }
+
+    .Texto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .coleccion {
+        background-image: url("../img/pedalboard-gbf2d7023f_1920.jpg");
+    }
+
+
+    .coleccion p {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 5px;
+    }
+
+    .intNosotros p {
+        font-size: 20px;
+    }
+
+    .imagenesNosotros {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .articMonkeys p {
+        font-size: 15px;
+    }
+
+    .footerNosotros {
+        font-size: 1.1em;
+    }
+
+    .visitas {
+        background-image: url("../img/museo.jpg");
+        background-position: center;
+    }
+
+    .mainVisitas {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        display: grid;
+        grid-template-rows: 25% auto;
+        row-gap: 60px;
+    }
+
+    .parrafoVisitas h2 {
+        font-size: 2.5em;
+    }
+
+    .linkDeFondo a {
+        font-size: 1.5em;
+    }
+
+    .parrafoVisitas {
+        padding: 0px;
+        text-align: left;
+    }
+
+    .parrafoVisitas p {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .formulario {
+        justify-content: space-around;
+        text-align: left;
+        padding-bottom: 0px;
+        background: rgba(0, 0, 0, 0.6);
+        width: 250px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .form {
+        display: flex;
+
+    }
+
+    .formularioContacto textarea {
+        width: 250px;
+        height: 50px
+    }
+
+    .mainContacto {
+        display: grid;
+        grid-template-rows: 25% auto;
+        margin: 20px;
+        text-align: left;
+        height: 400px;
+    }
+    
+.formularioContacto label {
+    display: flex;
+    flex-direction: column;
+}
+
+    .parrafoContacto h2{
+        font-size: 2.5em;
+    }
+
+    .parrafoContacto p{
+        font-size: 20px;
+    }
+
+    .Contacto {
+        background-image: url("../img/bannercontaco2.jpg");
+        background-position: center;
+    }
+
+    .formContacto{
+        width: 420px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+}
+
+.formularioContacto{
+    display:flex;
+    width: 440px;
+    flex-direction: row-reverse;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+    .formularioContacto textarea {
+        width: 400px;
+        height: 75px;
+    }
+}
