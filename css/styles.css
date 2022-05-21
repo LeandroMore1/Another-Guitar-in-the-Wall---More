@@ -47,7 +47,9 @@ body {
     font-size: 4em;
     text-shadow: 7px 7px 2px rgb(0, 0, 0);
     text-align: center;
+
 }
+
 
 .headerMain {
     color: white;
@@ -58,6 +60,12 @@ body {
     border-color: #8e96a5;
     background-size: cover;
     background-position: bottom;
+}
+
+.headerMain h1{
+    animation-name: fadeInicio;
+    animation-duration: 2s;
+    animation-delay: 0s;
 }
 
 .enlaces {
@@ -74,6 +82,7 @@ body {
     color: white;
     font-size: 16px;
     font-family: "Bebas Neue";
+    border-radius: 10px;
 }
 
 .introduccion {
@@ -174,6 +183,7 @@ footer {
     font-size: 2em;
     text-decoration: underline;
     text-align: center;
+
 }
 
 .mainColeccion img {
@@ -183,18 +193,24 @@ footer {
     width: 200px;
 }
 
+
+
 .linkDeFondo {
     padding: 40px;
+
 }
 
 .linkDeFondo a {
     color: white;
     border-style: solid;
-    border-spacing: 20px 20px;
     border-color: #ffffff;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
+    animation-name: fondoFade;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 4s;
 }
 
 .introduccion {
@@ -320,6 +336,32 @@ footer {
     width: 250px;
     height: 50px
 }
+
+.menu__item:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transition: 1s;
+
+}
+
+@keyframes fadeInicio{
+    from {opacity: 0};
+    to {opacity: 1};
+}
+
+@keyframes fondoFade {
+    0% {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    50% {
+        background-color: rgb(156, 149, 52);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+
 
 
 @media screen and (min-width: 600px) {
@@ -469,6 +511,11 @@ footer {
         border-radius: 5px;
     }
 
+    .coleccion p:hover{
+        background: rgba(255, 255, 255, 0.6);
+        transition: 1s;
+    }
+
     .intNosotros p {
         font-size: 20px;
     }
@@ -546,17 +593,17 @@ footer {
         text-align: left;
         height: 400px;
     }
-    
-.formularioContacto label {
-    display: flex;
-    flex-direction: column;
-}
 
-    .parrafoContacto h2{
+    .formularioContacto label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parrafoContacto h2 {
         font-size: 2.5em;
     }
 
-    .parrafoContacto p{
+    .parrafoContacto p {
         font-size: 20px;
     }
 
@@ -565,7 +612,7 @@ footer {
         background-position: center;
     }
 
-    .formContacto{
+    .formContacto {
         width: 420px;
         display: flex;
         justify-content: center;
@@ -573,15 +620,15 @@ footer {
         flex-wrap: wrap;
         align-items: flex-start;
         flex-direction: column;
-}
+    }
 
-.formularioContacto{
-    display:flex;
-    width: 440px;
-    flex-direction: row-reverse;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-}
+    .formularioContacto {
+        display: flex;
+        width: 440px;
+        flex-direction: row-reverse;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
 
     .formularioContacto textarea {
         width: 400px;
