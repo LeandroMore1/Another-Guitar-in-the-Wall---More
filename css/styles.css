@@ -15,15 +15,21 @@ body {
     background-attachment: fixed;
 }
 
+.carrusel1{
+    height: 700px;;
+}
+
+.formulario1{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 350px;
+    text-align: center;
+}
+
+
+
 .main {
-    display: grid;
-    grid-template-areas:
-        "intro intro intro"
-        "musicos musicos musicos"
-        "museo museo museo"
-        "visita visita visita"
-        "footer footer footer";
-    grid-template-columns: 12% auto 12%;
     font-family: "Bebas Neue";
     color: white;
     width: fit-content
@@ -68,21 +74,28 @@ body {
     animation-delay: 0s;
 }
 
-.enlaces {
+.contenedorEnlace{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    background: rgba(2, 2, 2, 0.6);
-    border-bottom: solid 1px white;
+    justify-content:  space-around;
+}
+.contenedorEnlace a{
+    border-radius: 0;
+    background-color: white;
+    border: solid white;
+}
+.enlaces {
+    background-color: white;
+    border-bottom: ridge black 1px;
 }
 
 .enlaces a {
     padding: 0px 12px 0px 12px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-family: "Bebas Neue";
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduccion {
@@ -97,14 +110,7 @@ body {
     row-gap: 20px;
 }
 
-.musicos {
-    grid-area: musicos;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 40px;
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
+.musicos{
     text-align: center;
 }
 
@@ -146,6 +152,11 @@ footer {
     color: white;
     background-color: #1c1c1c;
     font-size: 15px;
+}
+
+footer a{
+    border-radius: 5px;
+    
 }
 
 .mainColeccion {
@@ -285,25 +296,10 @@ footer {
     color: white;
 }
 
-.formulario {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 80px;
-    text-align: center;
-    font-size: 20px;
-}
 
-.formulario img {
-    width: 200px;
-    height: 150px;
-    padding-left: 10px;
-}
 
-.form label {
-    display: flex;
-    flex-direction: column;
-}
+
+
 
 .parrafoVisitas {
     text-align: center;
@@ -342,6 +338,7 @@ footer {
     transition: 1s;
 
 }
+
 
 @keyframes fadeInicio{
     from {opacity: 0};
@@ -467,11 +464,7 @@ footer {
 
     }
 
-    .musicos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
 
     .musicos p {
         width: 200px;
@@ -559,6 +552,7 @@ footer {
     .parrafoVisitas {
         padding: 0px;
         text-align: left;
+        padding-bottom: 50px;
     }
 
     .parrafoVisitas p {
@@ -566,20 +560,14 @@ footer {
         padding: 0px;
     }
 
-    .formulario {
-        justify-content: space-around;
-        text-align: left;
-        padding-bottom: 0px;
-        background: rgba(0, 0, 0, 0.6);
-        width: 250px;
-        flex-direction: column;
-        border-radius: 10px;
+
+    .cantidad{
+        margin: 0px;
     }
 
-    .form {
-        display: flex;
 
-    }
+
+
 
     .formularioContacto textarea {
         width: 250px;
@@ -628,10 +616,18 @@ footer {
         flex-direction: row-reverse;
         background: rgba(0, 0, 0, 0.6);
         border-radius: 10px;
+    
     }
 
     .formularioContacto textarea {
         width: 400px;
         height: 75px;
+    }
+    
+    .formulario1{
+        display: block;
+        background: rgba(0, 0, 0, 0.6);
+        height:320px;
+        text-align: left;
     }
 }
