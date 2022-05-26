@@ -15,18 +15,12 @@ body {
     background-attachment: fixed;
 }
 
-.carrusel1{
-    height: 700px;;
-}
-
 .formulario1{
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
-    height: 350px;
     text-align: center;
 }
-
 
 
 .main {
@@ -56,6 +50,28 @@ body {
 
 }
 
+.enviarV{
+    margin: 0px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 43px ;
+}
+
+.enviarC{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.containerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .headerMain {
     color: white;
@@ -110,6 +126,14 @@ body {
     row-gap: 20px;
 }
 
+.bajoFlea{
+    padding:20px
+}
+
+.guitarraGilmour{
+    padding:20px
+}
+
 .musicos{
     text-align: center;
 }
@@ -131,7 +155,6 @@ body {
     grid-column: 2;
     padding: 50px;
 }
-
 
 .veniAVernos {
     grid-area: visita;
@@ -163,6 +186,7 @@ footer a{
 
     font-family: "Bebas Neue";
     color: white;
+    text-align: center;
 }
 
 .mainColeccion p {
@@ -170,19 +194,8 @@ footer a{
 }
 
 .instrumento {
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
     padding-right: 20px;
-}
-
-.instrumento {
-    align-items: center;
-    justify-content: space-around;
-}
-
-.bajo {
-    flex-direction: column-reverse;
 }
 
 .mainColeccion p {
@@ -204,18 +217,16 @@ footer a{
     width: 200px;
 }
 
-
-
-.linkDeFondo {
-    padding: 40px;
-
+.linkDeFondo{
+    padding-bottom: 20px;
 }
 
 .linkDeFondo a {
+    
     color: white;
     border-style: solid;
     border-color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     animation-name: fondoFade;
@@ -242,26 +253,22 @@ footer a{
     color: white;
 }
 
-.seccionNos1 {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+.instrumentosBeatles{
     text-align: center;
-    grid-template-columns: 2;
-    column-gap: 20px;
+}
+
+.seccionNos1 {
     font-size: 14px;
+}
+
+.fundador{
+    text-align: center;
 }
 
 .seccionNos2 {
     text-align: center;
 }
 
-
-.imagenesNosotros {
-    display: grid;
-    grid-template-rows: 2;
-    row-gap: 20px;
-}
 
 .imagenesNosotros img {
     border: #ffffff;
@@ -296,11 +303,6 @@ footer a{
     color: white;
 }
 
-
-
-
-
-
 .parrafoVisitas {
     text-align: center;
     padding: 20px;
@@ -315,22 +317,9 @@ footer a{
     color: white;
 }
 
-.formularioContacto label {
-    display: flex;
-    flex-direction: column;
-}
-
 .mainContacto {
-    display: grid;
-    grid-template-rows: 25% auto;
     margin: 20px;
     text-align: center;
-    height: 400px;
-}
-
-.formularioContacto textarea {
-    width: 250px;
-    height: 50px
 }
 
 .menu__item:hover {
@@ -338,7 +327,6 @@ footer a{
     transition: 1s;
 
 }
-
 
 @keyframes fadeInicio{
     from {opacity: 0};
@@ -358,6 +346,8 @@ footer a{
         background: rgba(255, 255, 255, 0.6);
     }
 }
+
+
 
 
 
@@ -382,32 +372,8 @@ footer a{
         font-size: 23px;
     }
 
-    .instrumento {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 50px;
-        margin-left: 20px;
-        padding-right: 20px;
-    }
-
-    .instrumento {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: right;
-    }
-
-
-    .bajoFlea p {
-        text-align: left;
-    }
-
     .linkDeFondo a {
         font-size: 30px;
-    }
-
-    .seccionNos1 {
-        justify-content: space-around;
     }
 
     .seccionNos1 img {
@@ -433,6 +399,7 @@ footer a{
         width: 400px
     }
 }
+
 
 
 
@@ -499,12 +466,12 @@ footer a{
     }
 
 
-    .coleccion p {
+    .mainColeccion p {
         background: rgba(0, 0, 0, 0.6);
         border-radius: 5px;
     }
 
-    .coleccion p:hover{
+    .mainColeccion p:hover{
         background: rgba(255, 255, 255, 0.6);
         transition: 1s;
     }
@@ -513,11 +480,6 @@ footer a{
         font-size: 20px;
     }
 
-    .imagenesNosotros {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-    }
 
     .articMonkeys p {
         font-size: 15px;
@@ -565,26 +527,9 @@ footer a{
         margin: 0px;
     }
 
-
-
-
-
-    .formularioContacto textarea {
-        width: 250px;
-        height: 50px
-    }
-
     .mainContacto {
-        display: grid;
-        grid-template-rows: 25% auto;
         margin: 20px;
         text-align: left;
-        height: 400px;
-    }
-
-    .formularioContacto label {
-        display: flex;
-        flex-direction: column;
     }
 
     .parrafoContacto h2 {
@@ -600,34 +545,36 @@ footer a{
         background-position: center;
     }
 
-    .formContacto {
-        width: 420px;
-        display: flex;
-        justify-content: center;
-        border-radius: 10px;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
     .formularioContacto {
-        display: flex;
         width: 440px;
-        flex-direction: row-reverse;
         background: rgba(0, 0, 0, 0.6);
         border-radius: 10px;
-    
     }
 
-    .formularioContacto textarea {
-        width: 400px;
-        height: 75px;
-    }
-    
     .formulario1{
         display: block;
         background: rgba(0, 0, 0, 0.6);
-        height:320px;
+        height:348px;
         text-align: left;
+    }
+
+    .formContacto{
+        height: 510px;
+    }
+    
+    .notif{
+        margin: 0px;
+    }
+
+    .containerContacto{
+        display: block;
+    }
+
+    .pianoPaul{
+        padding-bottom: 20px;
+    }
+    
+    .enviarV{
+        margin-left: 0px;
     }
 }

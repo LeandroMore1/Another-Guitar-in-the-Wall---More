@@ -20,13 +20,13 @@
     <header>
         <nav class="enlaces">
             <div class="container">
-            <div class="row contenedorEnlace">
-            <a class="btn btn-light  col-sm-2" href="../index.html">Inicio</a>
-            <a class="btn btn-light  col-sm-2" href="../pages/visitas.html">Visitas</a>
-            <a class="btn btn-light  col-sm-2" href="../pages/contacto.html">Contacto</a>
-            <a class="btn btn-light  col-sm-2" href="../pages/verColeccion.html">Ver colección</a>
-            <a class="btn btn-light  col-sm-2" href="../pages/nosotros.html">Acerca de</a>
-        </div>
+                <div class="row contenedorEnlace">
+                    <a class="btn btn-light  col-2" href="../index.html">Inicio</a>
+                    <a class="btn btn-light  col-2" href="../pages/visitas.html">Visitas</a>
+                    <a class="btn btn-light  col-2" href="../pages/contacto.html">Contacto</a>
+                    <a class="btn btn-light  col-2" href="../pages/verColeccion.html">Ver colección</a>
+                    <a class="btn btn-light  col-2" href="../pages/nosotros.html">Acerca de</a>
+                </div>
     </header>
 
 
@@ -44,36 +44,79 @@
 
         </section>
 
-        <section class="formularioContacto">
-            <form class="formContacto" action="" method="post" enctype="">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" value="" placeholder="Apellido">
-                <label for="mail">E-mail</label>
-                <input type="mail" id="mail" name="mail" value="" placeholder="persona@ejemplo.com">
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="">
-                    <option value="-">-</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <label for="notif">*Deseo recibir notificaciones por E-mail*</label>
-                <input type="checkbox">
-                <div class="areaTexto">
-                    <textarea name="" id="" cols="50" rows="7" placeholder="Escriba su consulta aqui..."></textarea>
-                </div>
-                <input type="submit" name="" id="" value="enviar">
-            </form>
+        <section class="formulario1 formContacto col-md-3 ">
 
+            <div class="form ">
+
+                <div class="container-fluid  justify-content-md-start">
+                    <form class="" action="" method="" post="">
+                        <div class="row ">
+
+                            <div class="mb-3">
+                                <label for="labelNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="formNombre" placeholder="nombre">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="mb-3">
+                                <label for="labelApellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="formApellido" placeholder="apellido">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="mb-3">
+                                <label for="labelMail" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="formMail" placeholder="email@ejemplo.com">
+                            </div>
+
+                        </div>
+
+                        <div class="row cantidad">
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Sexo</option>
+                                <option value="Masc">Masculino</option>
+                                <option value="Fem">Femenino</option>
+                            </select>
+
+                        </div>
+
+                        <div class="row notif">
+
+                            <div class="form-check form-switch check">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">*Deseo recibir
+                                    notificaciones
+                                    por
+                                    E-mail*</label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Consulta:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <div class="container justify-content.center">
+                                <button type="submit" class="btn btn-primary mb-3 ">Enviar</button>
+                            </div>
+
+                    </form>
+                </div>
         </section>
 
-    </section>
-
-    <footer>
-        <p>Copyright ©2022 Another Guitar In The Wall Corporation. Todos los derechos reservados.</p>
-        <p>Para mas informacion, haga click <a href="./nosotros.html">aquí</a></p>
-    </footer>
+        <footer>
+            <p>Copyright ©2022 Another Guitar In The Wall Corporation. Todos los derechos reservados.</p>
+            <p>Para mas informacion, haga click <a href="./nosotros.html">aquí</a></p>
+        </footer>
 
 </html>
