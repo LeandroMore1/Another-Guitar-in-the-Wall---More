@@ -1,11 +1,15 @@
-* {
+@import "fuentesYColor";
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 @font-face {
-    font-family: "Alameda Script";
+    font-family: $alameda;
     src: url("../fonts/AlamedaScript.otf");
 }
 
@@ -24,8 +28,8 @@ body {
 
 
 .main {
-    font-family: "Bebas Neue";
-    color: white;
+    font-family: $bebas;
+    color: $color;
     width: fit-content;
 
     p {
@@ -41,7 +45,7 @@ body {
         text-align: center;
         
         img {
-            border: #ffffff;
+            border: $color;
             border-style: solid;
             border-width: 1px;
         }
@@ -75,8 +79,8 @@ body {
     justify-content: space-between;
     padding: 50px;
     row-gap: 20px;
-    font-family: "Bebas Neue";
-    color: white;
+    font-family: $bebas;
+    color: $color;
 
     p {
         font-size: 20px;
@@ -95,7 +99,7 @@ body {
 }
 
 .headerMain {
-    color: white;
+    color: $color;
     background-image: url("../img/banner7.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -115,7 +119,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "Alameda Script";
+        font-family: $alameda;
         font-size: 4em;
         text-shadow: 7px 7px 2px rgb(0, 0, 0);
         text-align: center;
@@ -123,7 +127,7 @@ body {
 }
 
 .enlaces {
-    background-color: white;
+    background-color: $color;
     border-bottom: ridge black 1px;
         .contenedorEnlace{
             display: flex;
@@ -131,12 +135,12 @@ body {
         
             a {
                 border-radius: 0;
-                background-color: white;
-                border: solid white;
+                background-color: $color;
+                border: solid $color;
                 padding: 0px 12px 0px 12px;
                 color: rgb(0, 0, 0);
                 font-size: 16px;
-                font-family: "Bebas Neue";
+                font-family: $bebas;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -149,8 +153,8 @@ body {
 footer {
     text-align: center;
     border-top: ridge;
-    font-family: "Bebas Neue";
-    color: white;
+    font-family: $bebas;
+    color: $color;
     background-color: #1c1c1c;
     font-size: 15px;
         a{
@@ -160,7 +164,7 @@ footer {
 
 .mainColeccion {
 	font-family: "Bebas Neue";
-	color: white;
+	color: $color;
 	text-align: center;
 	p {
 		padding: 30px;
@@ -191,7 +195,7 @@ footer {
         padding-bottom: 20px;
     
         a{
-            color: white;
+            color: $color;
             border-style: solid;
             border-color: #ffffff;
             font-size: 25px;
@@ -209,7 +213,7 @@ footer {
 
 .mainNosotros {
     font-family: "Bebas Neue";
-    color: white;
+    color: $color;
 
     .intNosotros {
         p {
@@ -263,7 +267,7 @@ footer {
 
 .mainVisitas {
     font-family: "Bebas Neue";
-    color: white;
+    color: $color;
 
     .enviarV{
         margin: 0px;
@@ -284,7 +288,7 @@ footer {
 
 .Contacto {
     font-family: "Bebas Neue";
-    color: white;
+    color: $color;
 
     .mainContacto {
         margin: 20px;

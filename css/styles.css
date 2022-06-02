@@ -30,7 +30,7 @@ body {
   .main .musicos {
     text-align: center; }
     .main .musicos img {
-      border: #ffffff;
+      border: white;
       border-style: solid;
       border-width: 1px; }
   .main .conoceElMuseo {
