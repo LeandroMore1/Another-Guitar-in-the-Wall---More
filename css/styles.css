@@ -1,580 +1,362 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 @font-face {
-    font-family: "Alameda Script";
-    src: url("../fonts/AlamedaScript.otf");
-}
+  font-family: "Alameda Script";
+  src: url("../fonts/AlamedaScript.otf"); }
 
 body {
-    background-image: url("../img/fethi-bouhaouchine-j2s9HybIWq0-unsplash.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
+  background-image: url("../img/fethi-bouhaouchine-j2s9HybIWq0-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
-.formulario1{
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    text-align: center;
-}
-
+.formulario1 {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  text-align: center; }
 
 .main {
-    font-family: "Bebas Neue";
-    color: white;
-    width: fit-content
-}
-
-.main p {
-    font-size: 18px;
-}
-
-.main h2 {
+  font-family: "Bebas Neue";
+  color: white;
+  width: fit-content; }
+  .main p {
+    font-size: 18px; }
+  .main h2 {
     font-size: 2em;
-    text-decoration: underline;
-}
+    text-decoration: underline; }
+  .main .musicos {
+    text-align: center; }
+    .main .musicos img {
+      border: #ffffff;
+      border-style: solid;
+      border-width: 1px; }
+  .main .conoceElMuseo {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px; }
+  .main .veniAVernos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    padding-bottom: 30px; }
 
-.tituloPrincipal {
+.introduccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  row-gap: 20px;
+  font-family: "Bebas Neue";
+  color: white; }
+  .introduccion p {
+    font-size: 20px; }
+  .introduccion h2 {
+    font-size: 2.5em; }
+
+.containerContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.headerMain {
+  color: white;
+  background-image: url("../img/banner7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom: ridge;
+  border-color: #8e96a5;
+  background-size: cover;
+  background-position: bottom; }
+  .headerMain h1 {
+    animation-name: fadeInicio;
+    animation-duration: 2s;
+    animation-delay: 0s; }
+  .headerMain .tituloPrincipal {
     height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Alameda Script";
     font-size: 4em;
-    text-shadow: 7px 7px 2px rgb(0, 0, 0);
-    text-align: center;
+    text-shadow: 7px 7px 2px black;
+    text-align: center; }
 
-}
-
-.enviarV{
-    margin: 0px;
-    width: 80px;
-    text-align: center;
-    padding: 10px;
-    margin-left: 43px ;
-}
-
-.enviarC{
-    margin-left: 25px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.containerContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.headerMain {
-    color: white;
-    background-image: url("../img/banner7.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-bottom: ridge;
-    border-color: #8e96a5;
-    background-size: cover;
-    background-position: bottom;
-}
-
-.headerMain h1{
-    animation-name: fadeInicio;
-    animation-duration: 2s;
-    animation-delay: 0s;
-}
-
-.contenedorEnlace{
-    display: flex;
-    justify-content:  space-around;
-}
-.contenedorEnlace a{
-    border-radius: 0;
-    background-color: white;
-    border: solid white;
-}
 .enlaces {
-    background-color: white;
-    border-bottom: ridge black 1px;
-}
-
-.enlaces a {
-    padding: 0px 12px 0px 12px;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-family: "Bebas Neue";
+  background-color: white;
+  border-bottom: ridge black 1px; }
+  .enlaces .contenedorEnlace {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.introduccion {
-    grid-area: intro;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    row-gap: 20px;
-}
-
-.bajoFlea{
-    padding:20px
-}
-
-.guitarraGilmour{
-    padding:20px
-}
-
-.musicos{
-    text-align: center;
-}
-
-.musicos img {
-    border: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.conoceElMuseo {
-    grid-area: museo;
-    grid-template-rows: 1fr 2fr 1fr;
-    row-gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    grid-column: 2;
-    padding: 50px;
-}
-
-.veniAVernos {
-    grid-area: visita;
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    row-gap: 20px;
-    padding-bottom: 30px;
-}
+    justify-content: space-around; }
+    .enlaces .contenedorEnlace a {
+      border-radius: 0;
+      background-color: white;
+      border: solid white;
+      padding: 0px 12px 0px 12px;
+      color: black;
+      font-size: 16px;
+      font-family: "Bebas Neue";
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 footer {
-    grid-area: footer;
-    text-align: center;
-    border-top: ridge;
-    font-family: "Bebas Neue";
-    color: white;
-    background-color: #1c1c1c;
-    font-size: 15px;
-}
-
-footer a{
-    border-radius: 5px;
-    
-}
+  text-align: center;
+  border-top: ridge;
+  font-family: "Bebas Neue";
+  color: white;
+  background-color: #1c1c1c;
+  font-size: 15px; }
+  footer a {
+    border-radius: 5px; }
 
 .mainColeccion {
-
-    font-family: "Bebas Neue";
-    color: white;
-    text-align: center;
-}
-
-.mainColeccion p {
-    padding: 30px
-}
-
-.instrumento {
-    margin-left: 20px;
-    padding-right: 20px;
-}
-
-.mainColeccion p {
-    font-size: 20px;
-    text-align: center;
-}
-
-.mainColeccion h2 {
+  font-family: "Bebas Neue";
+  color: white;
+  text-align: center; }
+  .mainColeccion p {
+    padding: 30px; }
+  .mainColeccion h2 {
     font-size: 2em;
     text-decoration: underline;
-    text-align: center;
-
-}
-
-.mainColeccion img {
+    text-align: center; }
+  .mainColeccion img {
     border: #ffffff;
     border-style: solid;
     border-width: 1px;
-    width: 200px;
-}
-
-.linkDeFondo{
-    padding-bottom: 20px;
-}
-
-.linkDeFondo a {
-    
-    color: white;
-    border-style: solid;
-    border-color: #ffffff;
-    font-size: 25px;
-    background: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    animation-name: fondoFade;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 4s;
-}
-
-.introduccion {
-    font-family: "Bebas Neue";
-    color: white;
-}
-
-.introduccion p {
-    font-size: 20px
-}
-
-.introduccion h2 {
-    font-size: 2.5em;
-}
+    width: 200px; }
+  .mainColeccion .bajoFlea {
+    padding: 20px; }
+  .mainColeccion .guitarraGilmour {
+    padding: 20px; }
+  .mainColeccion .linkDeFondo {
+    padding-bottom: 20px; }
+    .mainColeccion .linkDeFondo a {
+      color: white;
+      border-style: solid;
+      border-color: #ffffff;
+      font-size: 25px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      animation-name: fondoFade;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+      animation-duration: 4s; }
 
 .mainNosotros {
-    font-family: "Bebas Neue";
-    color: white;
-}
-
-.instrumentosBeatles{
-    text-align: center;
-}
-
-.seccionNos1 {
-    font-size: 14px;
-}
-
-.fundador{
-    text-align: center;
-}
-
-.seccionNos2 {
-    text-align: center;
-}
-
-
-.imagenesNosotros img {
+  font-family: "Bebas Neue";
+  color: white; }
+  .mainNosotros .intNosotros p {
+    font-size: 15px; }
+  .mainNosotros .intNosotros img {
+    width: 200px;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px; }
+  .mainNosotros .imagenesNosotros img {
     border: #ffffff;
     border-style: solid;
     border-width: 1px;
     width: 100px;
-    height: 100px;
-}
-
-.articMonkeys {
-    padding-bottom: 20px;
-}
-
-.intNosotros p {
-    font-size: 15px;
-}
-
-.intNosotros img {
-    width: 200px;
-    border: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-}
+    height: 100px; }
+  .mainNosotros .imagenesNosotros .seccionNos1 {
+    font-size: 14px; }
+    .mainNosotros .imagenesNosotros .seccionNos1 .instrumentosBeatles {
+      text-align: center; }
+    .mainNosotros .imagenesNosotros .seccionNos1 .fundador {
+      text-align: center; }
+  .mainNosotros .imagenesNosotros .seccionNos2 {
+    text-align: center; }
+    .mainNosotros .imagenesNosotros .seccionNos2 .articMonkeys {
+      padding-bottom: 20px; }
 
 .footerNosotros {
-    font-size: 12px;
-    padding-bottom: 5px;
-}
+  font-size: 12px;
+  padding-bottom: 5px; }
 
 .mainVisitas {
-    font-family: "Bebas Neue";
-    color: white;
-}
+  font-family: "Bebas Neue";
+  color: white; }
+  .mainVisitas .enviarV {
+    margin: 0px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 43px; }
 
 .parrafoVisitas {
-    text-align: center;
-    padding: 20px;
-}
-
-.parrafoVisitas p {
-    padding: 10px;
-}
+  text-align: center;
+  padding: 20px; }
+  .parrafoVisitas p {
+    padding: 10px; }
 
 .Contacto {
-    font-family: "Bebas Neue";
-    color: white;
-}
-
-.mainContacto {
+  font-family: "Bebas Neue";
+  color: white; }
+  .Contacto .mainContacto {
     margin: 20px;
-    text-align: center;
-}
+    text-align: center; }
+    .Contacto .mainContacto .enviarC {
+      margin-left: 25px;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
 
 .menu__item:hover {
-    background: rgba(255, 255, 255, 0.6);
-    transition: 1s;
+  background: rgba(255, 255, 255, 0.6);
+  transition: 1s; }
 
-}
-
-@keyframes fadeInicio{
-    from {opacity: 0};
-    to {opacity: 1};
-}
+@keyframes fadeInicio {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @keyframes fondoFade {
-    0% {
-        background: rgba(255, 255, 255, 0.6);
-    }
-
-    50% {
-        background-color: rgb(156, 149, 52);
-    }
-
-    100% {
-        background: rgba(255, 255, 255, 0.6);
-    }
-}
-
-
-
-
+  0% {
+    background: rgba(255, 255, 255, 0.6); }
+  50% {
+    background-color: #9c9534; }
+  100% {
+    background: rgba(255, 255, 255, 0.6); } }
 
 @media screen and (min-width: 600px) {
-
-    .musicos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
+  .musicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
     .musicos img {
-        width: 140px;
-        height: 140px;
-    }
-
+      width: 140px;
+      height: 140px; }
     .musicos p {
-        font-size: 20px;
-    }
-
-    .main p {
-        font-size: 23px;
-    }
-
-    .linkDeFondo a {
-        font-size: 30px;
-    }
-
-    .seccionNos1 img {
-        width: 200px;
-        height: 150px;
-    }
-
-    .seccionNos2 img {
-        width: 200px;
-        height: 150px;
-    }
-
-    .footerNosotros {
-        font-size: 15px;
-    }
-
-
-    footer {
-        font-size: 1.3em;
-    }
-
-    .introduccion img {
-        width: 400px
-    }
-}
-
-
-
+      font-size: 20px; }
+  .main p {
+    font-size: 23px; }
+  .linkDeFondo a {
+    font-size: 30px; }
+  .seccionNos1 img {
+    width: 200px;
+    height: 150px; }
+  .seccionNos2 img {
+    width: 200px;
+    height: 150px; }
+  .footerNosotros {
+    font-size: 15px; }
+  footer {
+    font-size: 1.3em; }
+  .introduccion img {
+    width: 400px; } }
 
 @media screen and (min-width: 768px) {
-
-    body {
-        background-image: url("../img/banner7.jpg");
-    }
-
-    .tituloPrincipal {
-        font-size: 6.3em;
-        height: 300px;
-
-    }
-
-    .main p {
-        font-size: 20px;
-    }
-
-    .main h2 {
-        font-size: 40px;
-
-    }
-
-
-    .enlaces a {
-        padding: 0px 17px 0px 17px;
-        font-size: 20px;
-
-    }
-
-
-
-    .musicos p {
-        width: 200px;
-        font-size: 17px;
-
-    }
-
-
-    .musicos img {
-        width: 260px;
-        height: 200px;
-    }
-
-    .conoceElMuseo iframe {
-        width: 400px;
-        height: 250px;
-    }
-
-    .veniAVernos iframe {
-        width: 400px;
-        height: 300px;
-        padding-bottom: 70px;
-    }
-
-    .Texto {
-        display: flex;
-        justify-content: center;
-    }
-
-    .coleccion {
-        background-image: url("../img/pedalboard-gbf2d7023f_1920.jpg");
-    }
-
-
-    .mainColeccion p {
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 5px;
-    }
-
-    .mainColeccion p:hover{
-        background: rgba(255, 255, 255, 0.6);
-        transition: 1s;
-    }
-
-    .intNosotros p {
-        font-size: 20px;
-    }
-
-
-    .articMonkeys p {
-        font-size: 15px;
-    }
-
-    .footerNosotros {
-        font-size: 1.1em;
-    }
-
-    .visitas {
-        background-image: url("../img/museo.jpg");
-        background-position: center;
-    }
-
-    .mainVisitas {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        display: grid;
-        grid-template-rows: 25% auto;
-        row-gap: 60px;
-    }
-
-    .parrafoVisitas h2 {
-        font-size: 2.5em;
-    }
-
-    .linkDeFondo a {
-        font-size: 1.5em;
-    }
-
-    .parrafoVisitas {
+  body {
+    background-image: url("../img/banner7.jpg"); }
+  .headerMain .tituloPrincipal {
+    font-size: 6.2em;
+    height: 300px; }
+  .main p {
+    font-size: 20px; }
+  .main h2 {
+    font-size: 40px; }
+  .enlaces .contenedorEnlace a {
+    padding: 0px 17px 0px 17px;
+    font-size: 20px; }
+  .musicos img {
+    width: 260px;
+    height: 200px; }
+  .musicos p {
+    width: 200px;
+    font-size: 17px; }
+  .conoceElMuseo iframe {
+    width: 400px;
+    height: 250px; }
+  .veniAVernos iframe {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 70px; }
+  .Texto {
+    display: flex;
+    justify-content: center; }
+  .coleccion {
+    background-image: url("../img/pedalboard-gbf2d7023f_1920.jpg"); }
+  .mainColeccion p {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    font-size: 20px; }
+    .mainColeccion p:hover {
+      background: rgba(255, 255, 255, 0.6);
+      transition: 1s; }
+  .mainColeccion .linkDeFondo a {
+    font-size: 45px; }
+  .fundador img {
+    width: 260px;
+    height: 200px; }
+  .mainNosotros .intNosotros img {
+    width: 500px; }
+  .mainNosotros .intNosotros p {
+    font-size: 20px; }
+  .mainNosotros .imagenesNosotros p {
+    font-size: 20px; }
+  .mainNosotros .imagenesNosotros img {
+    width: 220px;
+    height: 150px; }
+  .footerNosotros {
+    font-size: 1.1em; }
+  .visitas {
+    background-image: url("../img/museo.jpg");
+    background-position: center; }
+    .visitas .mainVisitas {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      display: grid;
+      grid-template-rows: 25% auto;
+      row-gap: 60px; }
+      .visitas .mainVisitas .cantidad {
+        margin: 0px; }
+      .visitas .mainVisitas .enviarV {
+        margin-left: 0px; }
+      .visitas .mainVisitas .parrafoVisitas {
         padding: 0px;
         text-align: left;
-        padding-bottom: 50px;
-    }
-
-    .parrafoVisitas p {
-        font-size: 20px;
-        padding: 0px;
-    }
-
-
-    .cantidad{
-        margin: 0px;
-    }
-
-    .mainContacto {
-        margin: 20px;
-        text-align: left;
-    }
-
-    .parrafoContacto h2 {
-        font-size: 2.5em;
-    }
-
-    .parrafoContacto p {
-        font-size: 20px;
-    }
-
-    .Contacto {
-        background-image: url("../img/bannercontaco2.jpg");
-        background-position: center;
-    }
-
-    .formularioContacto {
-        width: 440px;
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 10px;
-    }
-
-    .formulario1{
-        display: block;
-        background: rgba(0, 0, 0, 0.6);
-        height:348px;
-        text-align: left;
-    }
-
-    .formContacto{
-        height: 510px;
-    }
-    
-    .notif{
-        margin: 0px;
-    }
-
-    .containerContacto{
-        display: block;
-    }
-
-    .pianoPaul{
-        padding-bottom: 20px;
-    }
-    
-    .enviarV{
-        margin-left: 0px;
-    }
-}
+        padding-bottom: 50px; }
+        .visitas .mainVisitas .parrafoVisitas h2 {
+          font-size: 2.5em; }
+        .visitas .mainVisitas .parrafoVisitas p {
+          font-size: 20px;
+          padding: 0px; }
+  .Contacto {
+    background-image: url("../img/bannercontaco2.jpg");
+    background-position: center; }
+    .Contacto .parrafoContacto {
+      text-align: left; }
+      .Contacto .parrafoContacto h2 {
+        font-size: 2.5em; }
+      .Contacto .parrafoContacto p {
+        font-size: 20px; }
+    .Contacto .formContacto {
+      height: 510px; }
+  .mainContacto {
+    margin: 20px;
+    text-align: left; }
+    .mainContacto .cantidad {
+      margin: 0px; }
+  .formulario1 {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    height: 348px;
+    text-align: left; }
+  .notif {
+    margin: 0px; }
+  .pianoPaul {
+    padding-bottom: 20px; } }

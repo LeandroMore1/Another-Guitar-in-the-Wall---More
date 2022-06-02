@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Alameda Script";
+    src: url("../fonts/AlamedaScript.otf");
+}
+
+body {
+    background-image: url("../img/fethi-bouhaouchine-j2s9HybIWq0-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario1{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.main {
+    font-family: "Bebas Neue";
+    color: white;
+    width: fit-content;
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    .musicos{
+        text-align: center;
+        
+        img {
+            border: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+
+    .conoceElMuseo {
+        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .veniAVernos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    row-gap: 20px;
+    font-family: "Bebas Neue";
+    color: white;
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+.containerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMain {
+    color: white;
+    background-image: url("../img/banner7.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: ridge;
+    border-color: #8e96a5;
+    background-size: cover;
+    background-position: bottom;
+    
+    h1{
+        animation-name: fadeInicio;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+
+    .tituloPrincipal {
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Alameda Script";
+        font-size: 4em;
+        text-shadow: 7px 7px 2px rgb(0, 0, 0);
+        text-align: center;
+    }
+}
+
+.enlaces {
+    background-color: white;
+    border-bottom: ridge black 1px;
+        .contenedorEnlace{
+            display: flex;
+            justify-content:  space-around;
+        
+            a {
+                border-radius: 0;
+                background-color: white;
+                border: solid white;
+                padding: 0px 12px 0px 12px;
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: "Bebas Neue";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+}
+
+
+
+footer {
+    text-align: center;
+    border-top: ridge;
+    font-family: "Bebas Neue";
+    color: white;
+    background-color: #1c1c1c;
+    font-size: 15px;
+        a{
+        border-radius: 5px;
+    }
+}
+
+.mainColeccion {
+	font-family: "Bebas Neue";
+	color: white;
+	text-align: center;
+	p {
+		padding: 30px;
+	}
+
+    h2 {
+		font-size: 2em;
+		text-decoration: underline;
+		text-align: center;
+	}
+
+	img {
+		border: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		width: 200px;
+	}
+
+    .bajoFlea{
+        padding:20px
+    }
+    
+    .guitarraGilmour{
+        padding:20px
+    }
+
+    .linkDeFondo{
+        padding-bottom: 20px;
+    
+        a{
+            color: white;
+            border-style: solid;
+            border-color: #ffffff;
+            font-size: 25px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            animation-name: fondoFade;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-duration: 4s;
+        }
+    }
+}
+
+
+
+.mainNosotros {
+    font-family: "Bebas Neue";
+    color: white;
+
+    .intNosotros {
+        p {
+            font-size: 15px;
+        }
+        
+        img {
+            width: 200px;
+            border: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+
+    .imagenesNosotros{
+        img {
+            border: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+            width: 100px;
+            height: 100px;
+        }
+    
+        
+        .seccionNos1 {
+            font-size: 14px;
+        
+            .instrumentosBeatles{
+                text-align: center;
+            }
+        
+            .fundador{
+                text-align: center;
+            }
+        }
+    
+        .seccionNos2 {
+            text-align: center;
+            
+            .articMonkeys {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.footerNosotros {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.mainVisitas {
+    font-family: "Bebas Neue";
+    color: white;
+
+    .enviarV{
+        margin: 0px;
+        width: 80px;
+        text-align: center;
+        padding: 10px;
+        margin-left: 43px ;
+    }
+}
+
+.parrafoVisitas {
+    text-align: center;
+    padding: 20px;
+    p {
+        padding: 10px;
+    }
+}
+
+.Contacto {
+    font-family: "Bebas Neue";
+    color: white;
+
+    .mainContacto {
+        margin: 20px;
+        text-align: center;
+    
+        
+        .enviarC{
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    
+    }
+}
+
+
+
+.menu__item:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transition: 1s;
+}
+
+@keyframes fadeInicio{
+    from {opacity: 0};
+    to {opacity: 1};
+}
+
+@keyframes fondoFade {
+    0% {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    50% {
+        background-color: rgb(156, 149, 52);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@import "mediaMin600.scss";
+@import "mediaMin768.scss";

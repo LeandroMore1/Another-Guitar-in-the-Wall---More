@@ -1,0 +1,212 @@
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("../img/banner7.jpg");
+    }
+
+    .headerMain{
+
+        .tituloPrincipal {
+        font-size: 6.2em;
+        height: 300px;
+        }
+
+    }
+
+    .main {
+	    p {
+		font-size: 20px;
+	    }
+
+	    h2 {
+		font-size: 40px;
+	    }
+    }
+
+    .enlaces{
+
+    .contenedorEnlace {
+            a{
+            padding: 0px 17px 0px 17px;
+            font-size: 20px;
+            }
+        }
+    }
+
+    .musicos { 
+        img {
+            width: 260px;
+            height: 200px;
+        }
+        
+        p {
+        width: 200px;
+        font-size: 17px;
+        }
+    }
+
+
+
+    .conoceElMuseo iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .veniAVernos iframe {
+        width: 400px;
+        height: 300px;
+        padding-bottom: 70px;
+    }
+
+    .Texto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .coleccion {
+        background-image: url("../img/pedalboard-gbf2d7023f_1920.jpg");
+    }
+
+    .mainColeccion{
+            p {
+                background: rgba(0, 0, 0, 0.6);
+                border-radius: 5px;
+                font-size: 20px;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.6);
+                    transition: 1s;
+                }
+            }
+
+            .linkDeFondo {
+        
+                a{
+                    font-size: 45px;
+                }
+            }
+        }
+    
+    .fundador{
+        img {
+            width: 260px;
+            height: 200px;
+        }
+    }
+
+    .mainNosotros{
+
+        .intNosotros{
+        
+            img{
+            width:500px;
+            }
+            
+            p {
+            font-size: 20px;
+            }
+
+        }
+
+        .imagenesNosotros{
+            p{
+                font-size: 20px;
+            }
+
+            img{
+                width:220px;
+                height: 150px;
+            }
+        }
+    }
+
+    .footerNosotros {
+        font-size: 1.1em;
+    }
+
+    .visitas {
+        background-image: url("../img/museo.jpg");
+        background-position: center;
+
+        .mainVisitas {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            display: grid;
+            grid-template-rows: 25% auto;
+            row-gap: 60px;
+
+            .cantidad{
+                margin: 0px;
+            }
+
+            .enviarV{
+                margin-left: 0px;
+            }
+
+            .parrafoVisitas {
+                padding: 0px;
+                text-align: left;
+                padding-bottom: 50px;
+        
+                h2 {
+                    font-size: 2.5em;
+                }
+                
+                p {
+                    font-size: 20px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+
+    .Contacto {
+        background-image: url("../img/bannercontaco2.jpg");
+        background-position: center;
+
+        .parrafoContacto {
+            text-align: left;
+            h2 {
+                font-size: 2.5em;
+            }
+        
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .formContacto{
+            height: 510px;
+        }
+    }
+
+    .mainContacto {
+        margin: 20px;
+        text-align: left;
+
+        .cantidad{
+            margin: 0px;
+        }
+    }
+
+    .formulario1{
+        display: block;
+        background: rgba(0, 0, 0, 0.6);
+        height:348px;
+        text-align: left;
+    }
+
+
+    
+    .notif{
+        margin: 0px;
+    }
+
+    .pianoPaul{
+        padding-bottom: 20px;
+    }
+    
+
+}
