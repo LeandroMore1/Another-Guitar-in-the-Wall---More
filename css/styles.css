@@ -30,28 +30,21 @@ body {
   .main .musicos {
     text-align: center; }
     .main .musicos img {
-      border: white;
+      border: #ffffff;
       border-style: solid;
       border-width: 1px; }
-  .main .conoceElMuseo {
+  .main .conoceElMuseo, .main .veniAVernos {
     row-gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 50px; }
+    padding: 50px;
+    padding-bottom: 20px; }
   .main .veniAVernos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    row-gap: 20px;
     padding-bottom: 30px; }
 
 .introduccion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   justify-items: center;
   justify-content: space-between;
@@ -64,7 +57,7 @@ body {
   .introduccion h2 {
     font-size: 2.5em; }
 
-.containerContacto {
+.containerContacto, .introduccion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +230,7 @@ footer {
     flex-direction: row;
     justify-content: space-between; }
     .musicos img {
-      width: 140px;
+      width: 190px;
       height: 140px; }
     .musicos p {
       font-size: 20px; }
@@ -272,12 +265,12 @@ footer {
     padding: 0px 17px 0px 17px;
     font-size: 20px; }
   .musicos img {
-    width: 260px;
-    height: 200px; }
+    width: 300px;
+    height: 260px; }
   .musicos p {
     width: 200px;
     font-size: 17px; }
-  .conoceElMuseo iframe {
+  .conoceElMuseo iframe, .main .veniAVernos iframe {
     width: 400px;
     height: 250px; }
   .veniAVernos iframe {

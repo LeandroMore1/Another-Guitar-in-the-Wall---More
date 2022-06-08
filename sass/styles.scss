@@ -1,4 +1,4 @@
-@import "fuentesYColor";
+@import "variables";
 
 *{
     margin: 0;
@@ -18,6 +18,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 .formulario1{
     display: flex;
@@ -45,9 +46,7 @@ body {
         text-align: center;
         
         img {
-            border: $color;
-            border-style: solid;
-            border-width: 1px;
+            @include detallesImg;
         }
     }
 
@@ -58,22 +57,17 @@ body {
         align-items: center;
         text-align: center;
         padding: 50px;
+        padding-bottom: 20px;
     }
 
     .veniAVernos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        row-gap: 20px;
+    @extend .conoceElMuseo;
         padding-bottom: 30px;
     }
 }
 
 .introduccion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .containerContacto;
     text-align: center;
     justify-items: center;
     justify-content: space-between;
@@ -165,7 +159,7 @@ footer {
 .mainColeccion {
 	font-family: "Bebas Neue";
 	color: $color;
-	text-align: center;
+	text-align: map-get($variables,alinear);
 	p {
 		padding: 30px;
 	}
@@ -173,13 +167,11 @@ footer {
     h2 {
 		font-size: 2em;
 		text-decoration: underline;
-		text-align: center;
+		text-align: map-get($variables,alinear);
 	}
 
 	img {
-		border: #ffffff;
-		border-style: solid;
-		border-width: 1px;
+        @include detallesImg;
 		width: 200px;
 	}
 
@@ -196,11 +188,11 @@ footer {
     
         a{
             color: $color;
-            border-style: solid;
+            border-style: map-get($variables,borde);
             border-color: #ffffff;
             font-size: 25px;
             background: rgba(0, 0, 0, 0.6);
-            text-align: center;
+            text-align: map-get($variables,alinear);
             animation-name: fondoFade;
             animation-iteration-count: infinite;
             animation-timing-function: ease-out;
@@ -222,19 +214,14 @@ footer {
         
         img {
             width: 200px;
-            border: #ffffff;
-            border-style: solid;
-            border-width: 1px;
+            @include detallesImg;
         }
     }
 
     .imagenesNosotros{
         img {
-            border: #ffffff;
-            border-style: solid;
-            border-width: 1px;
-            width: 100px;
-            height: 100px;
+            @include detallesImg;
+            @include medidas(100px,100px);
         }
     
         
@@ -242,16 +229,16 @@ footer {
             font-size: 14px;
         
             .instrumentosBeatles{
-                text-align: center;
+                text-align: map-get($variables,alinear);
             }
         
             .fundador{
-                text-align: center;
+                text-align: map-get($variables,alinear);
             }
         }
     
         .seccionNos2 {
-            text-align: center;
+            text-align: map-get($variables,alinear);
             
             .articMonkeys {
                 padding-bottom: 20px;
@@ -272,14 +259,14 @@ footer {
     .enviarV{
         margin: 0px;
         width: 80px;
-        text-align: center;
+        text-align: map-get($variables,alinear);
         padding: 10px;
         margin-left: 43px ;
     }
 }
 
 .parrafoVisitas {
-    text-align: center;
+    text-align: map-get($variables,alinear);
     padding: 20px;
     p {
         padding: 10px;
@@ -292,7 +279,7 @@ footer {
 
     .mainContacto {
         margin: 20px;
-        text-align: center;
+        text-align: map-get($variables,alinear);
     
         
         .enviarC{
@@ -331,5 +318,263 @@ footer {
     }
 }
 
-@import "mediaMin600.scss";
-@import "mediaMin768.scss";
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    .musicos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            @include medidas(190px,140px);
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    
+
+    .main p {
+        font-size: 23px;
+    }
+
+    .linkDeFondo a {
+        font-size: 30px;
+    }
+
+    .seccionNos1 img {
+        @include medidas(200px,150px);
+    }
+
+    .seccionNos2 img {
+        @include medidas(200px,150px);
+    }
+
+    .footerNosotros {
+        font-size: 15px;
+    }
+
+
+    footer {
+        font-size: 1.3em;
+    }
+
+    .introduccion img {
+        width: 400px
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("../img/banner7.jpg");
+    }
+
+    .headerMain{
+
+        .tituloPrincipal {
+        font-size: 6.2em;
+        height: 300px;
+        }
+
+    }
+
+    .main {
+	    p {
+		font-size: 20px;
+	    }
+
+	    h2 {
+		font-size: 40px;
+	    }
+    }
+
+    .enlaces{
+
+    .contenedorEnlace {
+            a{
+            padding: 0px 17px 0px 17px;
+            font-size: 20px;
+            }
+        }
+    }
+
+    .musicos { 
+        img {
+            @include medidas(300px,260px)
+        }
+        
+        p {
+        width: 200px;
+        font-size: 17px;
+        }
+    }
+
+
+
+    .conoceElMuseo iframe {
+        @include medidas(400px,250px);
+    }
+
+    .veniAVernos iframe {
+        @include medidas(400px,300px);
+        padding-bottom: 70px;
+    }
+
+    .Texto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .coleccion {
+        background-image: url("../img/pedalboard-gbf2d7023f_1920.jpg");
+    }
+
+    .mainColeccion{
+            p {
+                background: rgba(0, 0, 0, 0.6);
+                border-radius: 5px;
+                font-size: 20px;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.6);
+                    transition: 1s;
+                }
+            }
+
+            .linkDeFondo {
+        
+                a{
+                    font-size: 45px;
+                }
+            }
+        }
+    
+    .fundador{
+        img {
+            @include medidas(260px,200px);
+        }
+    }
+
+    .mainNosotros{
+
+        .intNosotros{
+        
+            img{
+            width:500px;
+            }
+            
+            p {
+            font-size: 20px;
+            }
+
+        }
+
+        .imagenesNosotros{
+            p{
+                font-size: 20px;
+            }
+
+            img{
+                @include medidas(220px,150px);
+            }
+        }
+    }
+
+    .footerNosotros {
+        font-size: 1.1em;
+    }
+
+    .visitas {
+        background-image: url("../img/museo.jpg");
+        background-position: center;
+
+        .mainVisitas {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            display: grid;
+            grid-template-rows: 25% auto;
+            row-gap: 60px;
+
+            .cantidad{
+                margin: 0px;
+            }
+
+            .enviarV{
+                margin-left: 0px;
+            }
+
+            .parrafoVisitas {
+                padding: 0px;
+                text-align: left;
+                padding-bottom: 50px;
+        
+                h2 {
+                    font-size: 2.5em;
+                }
+                
+                p {
+                    font-size: 20px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+
+    .Contacto {
+        background-image: url("../img/bannercontaco2.jpg");
+        background-position: center;
+
+        .parrafoContacto {
+            text-align: left;
+            h2 {
+                font-size: 2.5em;
+            }
+        
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .formContacto{
+            height: 510px;
+        }
+    }
+
+    .mainContacto {
+        margin: 20px;
+        text-align: left;
+
+        .cantidad{
+            margin: 0px;
+        }
+    }
+
+    .formulario1{
+        display: block;
+        background: rgba(0, 0, 0, 0.6);
+        height:348px;
+        text-align: left;
+    }
+
+
+    
+    .notif{
+        margin: 0px;
+    }
+
+    .pianoPaul{
+        padding-bottom: 20px;
+    }
+    
+
+}

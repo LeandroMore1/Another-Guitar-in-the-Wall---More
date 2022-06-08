@@ -1,0 +1,17 @@
+
+$color: white;
+$alameda: "Alameda Script";
+$bebas: "Bebas Neue";
+
+@mixin medidas($ancho,$altura){
+    width: $ancho;
+    height: $altura;
+}
+
+$variables:( alinear:center, borde: solid, ancho: 1px);
+
+@mixin detallesImg {
+border: #ffffff;
+border-style: solid;
+border-width: 1px;
+}
